@@ -13,7 +13,7 @@ If( !(Test-Path "$basename.txt")){
 
 If( Test-Path $transcript)
 {
-    Get-Content $transcript | llm -s "Summarize this text" -m mistral-7b-instruct-v0 > $summary
+    Get-Content $transcript | llm -s "Summarize this text" -m mistral-7b-instruct-v0 -n > $summary
     Rename-Item -Path $transcript -NewName "$basename.txt"
 }else
 {

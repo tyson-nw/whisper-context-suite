@@ -34,17 +34,17 @@ Create the in the following keys
 	1. Add Key named `WhisperSubtitle`
 	2. Set the Default for the Key to `Whisper Subtitle`
 	3. Add Key named `command` 
-	4. Set the Default for command to `"C:\Program Files\Faster-Whisper-XXL\faster-whisper-xxl.exe --fp16 False --output_format srt --model large "%1"`
+	4. Set the Default for command to `"C:\Program Files\Faster-Whisper-XXL\faster-whisper-xxl.exe" --language English --output_format srt --model large-v2 -o . "%1"`
 6. Add Whisper Transcribe
 	1. Add Key named `WhisperTranscribe`
 	2. Set the Default for the Key to `Whisper Transcribe`
 	3. Add Key named `command` 
-	4. Set the Default for command to `"C:\Program Files\Faster-Whisper-XXL\faster-whisper-xxl.exe" --fp16 False --output_format text --model large "%1"`
+	4. Set the Default for command to `""C:\Program Files\Faster-Whisper-XXL\faster-whisper-xxl.exe" --language English --output_format text --model large-v2 -o . "%1"`
 7. Add Whisper Translate
 	1. Add Key named `WhisperTranslate`
 	2. Set the Default for the Key to `Whisper Translate`
 	3. Add Key named `command` 
-	4. Set the Default for command to `"C:\Program Files\Faster-Whisper-XXL\faster-whisper-xxl.exe" --fp16 False --output_format text --model large --task translate "%1"`
+	4. Set the Default for command to `"C:\Program Files\Faster-Whisper-XXL\faster-whisper-xxl.exe" --task translate --output_format srt --model large-v2 -o . "%1"`
 8. Add Whisper Summarize
 	1. Add Key named `WhisperSummarize`
 	2. In the Default for the key to `Whisper Summarize`
